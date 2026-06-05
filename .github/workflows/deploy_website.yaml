@@ -25,7 +25,7 @@ jobs:
           node-version: lts/*
           cache: 'yarn'
 
-      - run: yarn install --immutable
+      - run: yarn install --frozen-lockfile
 
       # If on main without env vars, build with .env file
       - name: Build with .env file
