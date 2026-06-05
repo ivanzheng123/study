@@ -53,7 +53,8 @@
     "test-randomization",
     "test-component-timeout",
     "test-skip-logic",
-    "test-step-logic"
+    "test-step-logic",
+    "learn-stats-ds-vid"
   ],
   "configs": {
     "tutorial": {
@@ -242,6 +243,9 @@
     "example-VLAT-adaptive": {
       "path": "example-VLAT-adaptive/config.json",
       "test": true
+    },
+    "learn-stats-ds-vid": {
+      "path": "learn-stats-ds-video/config.json"
     }
   }
 }
