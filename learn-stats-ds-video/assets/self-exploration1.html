@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guided Exploration</title>
+
+    <script src="../../revisitUtilities/revisit-communicate.js"></script>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #444;
+        width: 100%;
+      }
+
+      body {
+        padding-bottom: 40px;
+      }
+
+      .section {
+        padding: 14px 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .gray {
+        background: #eeeeee;
+      }
+
+      h2 {
+        margin: 8px 0 20px 0;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.45;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .step-title {
+        font-size: 20px;
+        margin-bottom: 18px;
+      }
+
+      .step-img {
+        max-width: 100%;
+        display: block;
+        margin: 12px 0 28px 0;
+      }
+
+      iframe {
+        width: 100%;
+        height: 780px;
+        border: none;
+        display: block;
+        margin-top: 16px;
+        margin-bottom: 24px;
+      }
+
+      .answer-row {
+        display: grid;
+        grid-template-columns: 300px 320px;
+        gap: 20px;
+        align-items: center;
+        margin: 14px 0;
+      }
+
+      input {
+        font-size: 16px;
+        padding: 6px;
+        width: 300px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="section">
+      <p>
+        A researcher is interested in understanding the average rating of a movie on a scale of -3
+        being extremely bad to 3 being extremely good. The researchers collected the rating from
+        100 people who just watched the movie in a cinema. The average rating is 1.1.
+      </p>
+
+      <p>
+        In this activity, you will follow guided steps to construct two confidence intervals.
+      </p>
+    </div>
+
+    <div class="section gray">
+      <p>Context</p>
+
+      <h2>Part 1: Construct a 95% confidence interval</h2>
+
+      <p class="bold">
+        A confidence interval app is displayed after Step 5. Please follow the five steps to
+        construct a 95% confidence interval for the average rating of a movie in the confidence
+        interval app. After you finish your construction, review Steps 6 and 7 to see the correct
+        solution. If your confidence interval is incorrect, revise your work in the confidence
+        interval app based on the explanations provided in those steps.
+      </p>
+
+      <p class="bold">
+        Your activity in the app will be recorded. To receive extra credit, it is important that
+        you complete all steps and fully engage with the activity.
+      </p>
+    </div>
+
+    <div class="section">
+      <p class="step-title">
+        Step 1. In the app below, type in the b to 1.1, the sample mean, and click “Update b”
+      </p>
+      <img class="step-img" src="guided-step-1.png" alt="Step 1 instruction" />
+
+      <p class="step-title">
+        Step 2. Type in an initial β of your choice and click “Update β”. For example, you can set
+        the β to be 0. You will adjust this later.
+      </p>
+      <img class="step-img" src="guided-step-2.png" alt="Step 2 instruction" />
+
+      <p class="step-title">
+        Step 3. Click “N” to put a sampling distribution of b. Notice that currently the SE,
+        standard error, is set to 1.
+      </p>
+      <img class="step-img" src="guided-step-3.png" alt="Step 3 instruction" />
+
+      <p class="step-title">
+        Step 4. Now you should see a sampling distribution in the app. Click the α to color the
+        sampling distribution. Because we want to construct a 95% confidence interval, choose
+        α = .05 to color the middle 95% of the sampling distribution.
+      </p>
+      <img class="step-img" src="guided-step-4.png" alt="Step 4 instruction" />
+
+      <p class="step-title">
+        Step 5. Click on the sampling distribution to move it to find the lower bound and upper
+        bound of the confidence interval. Explore on your own before moving on to the next step.
+      </p>
+
+      <p class="bold">
+        Remember: the lower bound and upper bound of a confidence interval indicate the range of
+        β1s that we would consider likely to have produced the sample b1s.
+      </p>
+      <img class="step-img" src="guided-step-5.png" alt="Step 5 instruction" />
+    </div>
+
+    <div class="section gray">
+      <p class="bold">
+        Now, construct the 95% confidence interval in the app below based on the five steps above.
+        You can go back to review each step when constructing the confidence interval. After you
+        finish, review Step 6 and 7.
+      </p>
+
+      <iframe
+        src="https://icy9847.github.io/confidence_interval/confidence-context-1.html?beta=1&amp;b=1.1&amp;curve=normal&amp;labels=%24%5Cbeta%24%2C%24b%24%2C%24%5Cbar%7Bb%7D%24"
+        allowfullscreen
+      ></iframe>
+
+      <p class="step-title">What is the 95% confidence interval?</p>
+
+      <div class="answer-row">
+        <label for="lower-bound">The value of the lower bound:</label>
+        <input id="lower-bound" type="text" />
+      </div>
+
+      <div class="answer-row">
+        <label for="upper-bound">The value of the upper bound:</label>
+        <input id="upper-bound" type="text" />
+      </div>
+    </div>
+
+    <div class="section">
+      <p class="step-title">
+        Step 6. Mark the lower bound: this is the lowest value of β that will still make b = 1.1
+        likely. It does not need to be precisely the number.
+      </p>
+      <img class="step-img" src="guided-step-6.png" alt="Step 6 instruction" />
+
+      <p class="step-title">
+        Step 7. Mark the upper bound: this is the highest value of β that will still make b = 1.1
+        likely.
+      </p>
+      <img class="step-img" src="guided-step-7.png" alt="Step 7 instruction" />
+    </div>
+
+    <script>
+      const lowerInput = document.getElementById("lower-bound");
+      const upperInput = document.getElementById("upper-bound");
+
+      function saveAnswers() {
+        Revisit.postAnswers({
+          guided_exploration_95_lower_bound: lowerInput.value,
+          guided_exploration_95_upper_bound: upperInput.value
+        });
+      }
+
+      lowerInput.addEventListener("input", saveAnswers);
+      upperInput.addEventListener("input", saveAnswers);
+    </script>
+  </body>
+</html>
