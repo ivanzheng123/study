@@ -219,11 +219,11 @@
           ]
         },
         "Self-exploration1": {
-          "type": "website",
-          "path": "learn-stats-ds-video/assets/self-exploration1.html",
-          "style": {
-            "width": "100%",
-            "height": "5200px"
+          "type": "react-component",
+          "path": "learn-stats-ds-video/assets/ConfidenceApp.tsx",
+          "parameters": {
+            "pageId": "guided-95",
+            "taskId": "guided-confidence-95"
           },
           "response": [
                 {
@@ -276,12 +276,15 @@
           ]
         },
         "Self-exploration3":{
-          "type": "website",
-          "path": "learn-stats-ds-video/assets/self-exploration3.html",
-          "style": {
-            "width": "100%",
-            "height": "3300px"
+          "type": "react-component",
+          "path": "learn-stats-ds-video/assets/ConfidenceApp.tsx",
+          "parameters": {
+            "pageId": "guided-99",
+            "taskId": "guided-confidence-99",
+            "lowerAnswerId": "guided_exploration_99_lower_bound",
+            "upperAnswerId": "guided_exploration_99_upper_bound"
           },
+          
           "response": [
                 {
                   "id": "guided_exploration_99_lower_bound",
@@ -549,13 +552,12 @@
           ]
         },
         "Posttest4": {
-          "type": "website",
+          "type": "react-component",
           "instruction": "Q7. In order to test the effectiveness of an AI tutor in helping students learn programming, researchers randomly assigned students to either learn programming with an AI tutor or learn programming without an AI tutor. Students then completed a programming test.\n\nResearchers found that students who learned with the AI tutor on average answered 7.3 questions correctly, whereas those who learned without the AI tutor on average answered 6.5 questions correctly.\n\nThe b1 of this two-group model is 0.8.",
           "instructionLocation": "aboveStimulus",
-          "path": "learn-stats-ds-video/assets/confidence-interval-app.html",
-          "style": {
-            "width": "100%",
-            "height": "800px"
+          "path": "learn-stats-ds-video/assets/ConfidenceApp.tsx",
+          "parameters": {
+            "pageId": "app-only"
           },
           "response": [
             {
@@ -594,13 +596,12 @@
           ]
         },
         "Posttest5": {
-          "type": "website",
+          "type": "react-component",
           "instruction": "Use the virtual app below to find the 90% confidence interval for β₁",
           "instructionLocation": "aboveStimulus",
-          "path": "learn-stats-ds-video/assets/confidence-interval-app.html",
-          "style": {
-            "width": "100%",
-            "height": "800px"
+          "path": "learn-stats-ds-video/assets/ConfidenceApp.tsx",
+          "parameters": {
+            "pageId": "app-only"
           },
           "response": [
             {
@@ -643,13 +644,12 @@
           ]  
         },
         "Posttest6": {
-          "type": "website",
+          "type": "react-component",
           "instruction": "Use the virtual app below to find the 99% confidence interval for β₁",
           "instructionLocation": "aboveStimulus",
-          "path": "learn-stats-ds-video/assets/confidence-interval-app.html",
-          "style": {
-            "width": "100%",
-            "height": "800px"
+          "path": "learn-stats-ds-video/assets/ConfidenceApp.tsx",
+          "parameters": {
+            "pageId": "app-only"
           },
           "response": [
             {
@@ -693,13 +693,13 @@
           ]  
         },
         "Posttest7": {
-          "type": "website",
+          "type": "react-component",
           "instruction": "f) The standard error of the sampling distribution above is 0.9, use the app below to change standard error to 0.5.",
           "instructionLocation": "aboveStimulus",
-          "path": "learn-stats-ds-video/assets/post-vm14-tip.html",
-          "style": {
-            "width": "100%",
-            "height": "1450px"
+          "path": "learn-stats-ds-video/assets/ConfidenceApp.tsx",
+          "parameters": {
+            "pageId": "post_vm_14",
+            "taskId": "post_vm_14"
           },
           "response": [
             {
