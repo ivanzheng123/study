@@ -597,7 +597,7 @@
         },
         "Posttest5": {
           "type": "react-component",
-          "instruction": "Use the virtual app below to find the 90% confidence interval for β₁",
+          "instruction": "Q7. In order to test the effectiveness of an AI tutor in helping students learn programming, researchers randomly assigned students to either learn programming with an AI tutor or learn programming without an AI tutor. Students then completed a programming test.\n\nResearchers found that students who learned with the AI tutor on average answered 7.3 questions correctly, whereas those who learned without the AI tutor on average answered 6.5 questions correctly.\n\nThe b1 of this two-group model is 0.8. \n\nUse the virtual app below to find the 90% confidence interval for β₁",
           "instructionLocation": "aboveStimulus",
           "path": "learn-stats-ds-video/assets/ConfidenceApp.tsx",
           "parameters": {
