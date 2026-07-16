@@ -54,7 +54,8 @@
     "test-component-timeout",
     "test-skip-logic",
     "test-step-logic",
-    "learn-stats-ds-vid"
+    "learn-stats-ds-vid",
+    "tve-learning-summer"
   ],
   "configs": {
     "tutorial": {
@@ -246,6 +247,9 @@
     },
     "learn-stats-ds-vid": {
       "path": "learn-stats-ds-video/config.json"
+    },
+    "tve-learning-summer": {
+      "path": "tve-learning-summer/config.json"
     }
   }
 }
