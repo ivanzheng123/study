@@ -778,40 +778,153 @@
         "mic-check"
     ],
     "sequence": {
+    "order": "latinSquare",
+    "numSamples": 1,
+    "components": [
+      {
+        "id": "explore-embodied",
         "order": "fixed",
         "components": [
-            "Consent",
-            "$mic-check.co.audioTest",
-            "Demographics",
-            "Pretest_1",
-            "Pretest_2",
-            "Pretest_3",
-            "Motivation",
-            "Self-exploration1",
-            "Self-exploration2",
-            "Self-exploration3",
-            "Self-exploration4",
-            "Embodied_video_intro",
-            "Embodied_video_instructions",
-            "Video1",
-            "Video2",
-            "Video3",
-            "Video_engagement",
-            "Control_instructions",
-            "Control_intro",
-            "Control_Video1",
-            "Control_Video2",
-            "Control_Video3",
-            "Cognitive_load",
-            "Posttest_intro",
-            "Posttest1",
-            "Posttest2",
-            "Posttest3",
-            "Posttest4",
-            "Posttest5",
-            "Posttest6",
-            "Posttest7",
-            "Posttest8"
+          "Consent",
+          "$mic-check.co.audioTest",
+          "Demographics",
+          "Pretest_1",
+          "Pretest_2",
+          "Pretest_3",
+          "Motivation",
+
+          "Self-exploration1",
+          "Self-exploration2",
+          "Self-exploration3",
+          "Self-exploration4",
+
+          "Embodied_video_intro",
+          "Embodied_video_instructions",
+          "Video1",
+          "Video2",
+          "Video3",
+          "Video_engagement",
+
+          "Cognitive_load",
+          "Posttest_intro",
+          "Posttest1",
+          "Posttest2",
+          "Posttest3",
+          "Posttest4",
+          "Posttest5",
+          "Posttest6",
+          "Posttest7",
+          "Posttest8"
         ]
-    }
+      },
+      {
+        "id": "explore-control",
+        "order": "fixed",
+        "components": [
+          "Consent",
+          "$mic-check.co.audioTest",
+          "Demographics",
+          "Pretest_1",
+          "Pretest_2",
+          "Pretest_3",
+          "Motivation",
+
+          "Self-exploration1",
+          "Self-exploration2",
+          "Self-exploration3",
+          "Self-exploration4",
+
+          "Control_instructions",
+          "Control_intro",
+          "Control_Video1",
+          "Control_Video2",
+          "Control_Video3",
+          "Video_engagement",
+
+          "Cognitive_load",
+          "Posttest_intro",
+          "Posttest1",
+          "Posttest2",
+          "Posttest3",
+          "Posttest4",
+          "Posttest5",
+          "Posttest6",
+          "Posttest7",
+          "Posttest8"
+        ]
+      },
+      {
+        "id": "embodied-explore",
+        "order": "fixed",
+        "components": [
+          "Consent",
+          "$mic-check.co.audioTest",
+          "Demographics",
+          "Pretest_1",
+          "Pretest_2",
+          "Pretest_3",
+          "Motivation",
+
+          "Embodied_video_intro",
+          "Embodied_video_instructions",
+          "Video1",
+          "Video2",
+          "Video3",
+          "Video_engagement",
+
+          "Self-exploration1",
+          "Self-exploration2",
+          "Self-exploration3",
+          "Self-exploration4",
+
+          "Cognitive_load",
+          "Posttest_intro",
+          "Posttest1",
+          "Posttest2",
+          "Posttest3",
+          "Posttest4",
+          "Posttest5",
+          "Posttest6",
+          "Posttest7",
+          "Posttest8"
+        ]
+      },
+      {
+        "id": "control-explore",
+        "order": "fixed",
+        "components": [
+          "Consent",
+          "$mic-check.co.audioTest",
+          "Demographics",
+          "Pretest_1",
+          "Pretest_2",
+          "Pretest_3",
+          "Motivation",
+
+          "Control_instructions",
+          "Control_intro",
+          "Control_Video1",
+          "Control_Video2",
+          "Control_Video3",
+          "Video_engagement",
+
+          "Self-exploration1",
+          "Self-exploration2",
+          "Self-exploration3",
+          "Self-exploration4",
+
+          "Cognitive_load",
+          "Posttest_intro",
+          "Posttest1",
+          "Posttest2",
+          "Posttest3",
+          "Posttest4",
+          "Posttest5",
+          "Posttest6",
+          "Posttest7",
+          "Posttest8"
+        ]
+      }
+    ]
+  }
 }
