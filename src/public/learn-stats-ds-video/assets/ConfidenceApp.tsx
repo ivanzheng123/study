@@ -18,7 +18,7 @@ import type {
 
 import useProvenance from './useProvenance';
 
-type ConfidencePageId = 'guided-95' | 'app-only' | 'post-vm14' | 'guided-99';
+type ConfidencePageId = 'guided-95' | 'app-only' | 'post-vm14' | 'guided-99' | 'guided-95-2' | 'guided-99-2';
 
 interface ConfidenceAppParameters {
   pageId?: ConfidencePageId;
@@ -1097,6 +1097,11 @@ function App({
         )}
       </section>
 
+    </div>
+  );
+
+  const renderGuided95Page2 = () => (
+    <div className='guided-page'>
       <section className="guided-section">
         <p className="guided-step-title">
           Step 6. Mark the lower bound: this is the lowest value of β that will
@@ -1120,9 +1125,15 @@ function App({
           src={assetPath('guided-step-7.png')}
           alt="Step 7 instruction"
         />
+
+        {renderConfidenceApplication()}
+
+        {renderConfidenceIntervalInputs(
+          'What is the 95% confidence interval?',
+        )}
       </section>
     </div>
-  );
+  )
 
   const renderGuided99Page = () => (
     <div className="guided-page">
@@ -1173,7 +1184,11 @@ function App({
           )}
         </div>
       </section>
+    </div>
+  );
 
+  const renderGuided99Page2 = () => (
+    <div className='guided-section'>
       <section className="guided-section">
         <p className="guided-step-title">
           Step 3. Mark the lower bound of the 99% confidence interval.
@@ -1196,9 +1211,19 @@ function App({
           src={assetPath('guided-step-10.png')}
           alt="Step 4: mark upper bound"
         />
+
+        {renderConfidenceApplication()}
+
+        <div className="guided-answer-section">
+          {renderConfidenceIntervalInputs(
+            'What is the 99% confidence interval?',
+          )}
+        </div>
       </section>
+
+
     </div>
-  );
+  )
 
   const renderPostVM14Page = () => (
     <div className="guided-page">
@@ -1249,11 +1274,17 @@ function App({
       case 'guided-95':
         return renderGuided95Page();
 
+      case 'guided-95-2': 
+        return renderGuided95Page2();
+
       case 'post-vm14': 
         return renderPostVM14Page();
       
       case 'guided-99': 
         return renderGuided99Page();
+
+      case 'guided-99-2':
+        return renderGuided99Page2();
 
       default:
         return renderAppOnlyPage();
