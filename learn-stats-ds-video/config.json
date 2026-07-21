@@ -226,18 +226,42 @@
             "taskId": "guided-confidence-95"
           },
           "response": [
-                {
-                  "id": "guided_exploration_95_lower_bound",
-                  "type": "reactive",
-                  "prompt": "The value of the lower bound:",
-                  "location": "belowStimulus"
-                },
-                {
-                  "id": "guided_exploration_95_upper_bound",
-                  "type": "reactive",
-                  "prompt": "The value of the upper bound:",
-                  "location": "belowStimulus"
-                }
+            {
+              "id": "guided_exploration_95_lower_bound",
+              "prompt": "95% confidence interval lower bound",
+              "type": "reactive",
+              "hidden": true
+            },
+            {
+              "id": "guided_exploration_95_upper_bound",
+              "prompt": "95% confidence interval upper bound",
+              "type": "reactive",
+              "hidden": true
+            }
+          ]
+        },
+        "Self-exploration1-2": {
+          "type": "react-component",
+          "path": "learn-stats-ds-video/assets/ConfidenceApp.tsx",
+          "parameters": {
+            "pageId": "guided-95-2",
+            "taskId": "guided-confidence-95-2",
+            "lowerAnswerId": "guided_exploration_95_2_lower_bound",
+            "upperAnswerId": "guided_exploration_95_2_upper_bound"
+          },
+          "response": [
+            {
+              "id": "guided_exploration_95_2_lower_bound",
+              "prompt": "95% confidence interval revised lower bound",
+              "type": "reactive",
+              "hidden": true
+            },
+            {
+              "id": "guided_exploration_95_2_upper_bound",
+              "prompt": "95% confidence interval revised upper bound",
+              "type": "reactive",
+              "hidden": true
+            }
           ]
         },
         "Self-exploration2": {
@@ -284,20 +308,43 @@
             "lowerAnswerId": "guided_exploration_99_lower_bound",
             "upperAnswerId": "guided_exploration_99_upper_bound"
           },
-          
           "response": [
-                {
-                  "id": "guided_exploration_99_lower_bound",
-                  "type": "reactive",
-                  "prompt": "The value of the lower bound:",
-                  "location": "belowStimulus"
-                },
-                {
-                  "id": "guided_exploration_99_upper_bound",
-                  "type": "reactive",
-                  "prompt": "The value of the upper bound:",
-                  "location": "belowStimulus"
-                }
+            {
+              "id": "guided_exploration_99_lower_bound",
+              "prompt": "99% confidence interval lower bound",
+              "type": "reactive",
+              "hidden": true
+            },
+            {
+              "id": "guided_exploration_99_upper_bound",
+              "prompt": "99% confidence interval upper bound",
+              "type": "reactive",
+              "hidden": true
+            }
+          ]
+        },
+        "Self-exploration3-2":{
+          "type": "react-component",
+          "path": "learn-stats-ds-video/assets/ConfidenceApp.tsx",
+          "parameters": {
+            "pageId": "guided-99-2",
+            "taskId": "guided-confidence-99-2",
+            "lowerAnswerId": "guided_exploration_99_2_lower_bound",
+            "upperAnswerId": "guided_exploration_99_2_upper_bound"
+          },
+          "response": [
+            {
+              "id": "guided_exploration_99_2_lower_bound",
+              "prompt": "99% confidence interval revised lower bound",
+              "type": "reactive",
+              "hidden": true
+            },
+            {
+              "id": "guided_exploration_99_2_upper_bound",
+              "prompt": "99% confidence interval revised upper bound",
+              "type": "reactive",
+              "hidden": true
+            }
           ]
         },
         "Self-exploration4": {
@@ -794,8 +841,10 @@
           "Motivation",
 
           "Self-exploration1",
+          "Self-exploration1-2",
           "Self-exploration2",
           "Self-exploration3",
+          "Self-exploration3-2",
           "Self-exploration4",
 
           "Embodied_video_intro",
@@ -830,8 +879,10 @@
           "Motivation",
 
           "Self-exploration1",
+          "Self-exploration1-2",
           "Self-exploration2",
           "Self-exploration3",
+          "Self-exploration3-2",
           "Self-exploration4",
 
           "Control_instructions",
@@ -873,8 +924,10 @@
           "Video_engagement",
 
           "Self-exploration1",
+          "Self-exploration1-2",
           "Self-exploration2",
           "Self-exploration3",
+          "Self-exploration3-2",
           "Self-exploration4",
 
           "Cognitive_load",
@@ -909,8 +962,10 @@
           "Video_engagement",
 
           "Self-exploration1",
+          "Self-exploration1-2",
           "Self-exploration2",
           "Self-exploration3",
+          "Self-exploration3-2",
           "Self-exploration4",
 
           "Cognitive_load",
