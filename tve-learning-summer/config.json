@@ -454,105 +454,6 @@
             "forceCompletion": true,
             "response": []
         },
-        "Main_ExploreSecond": {
-            "type": "react-component",
-            "path": "tve-learning-summer/assets/ConfidenceApp.tsx",
-            "parameters": {
-                "pageId": "guided-95",
-                "taskId": "guided-confidence-95-second"
-            },
-            "response": []
-        },
-        "Main_ExploreSecond2": {
-            "type": "react-component",
-            "path": "tve-learning-summer/assets/ConfidenceApp.tsx",
-            "parameters": {
-                "pageId": "guided-95-2",
-                "taskId": "guided-confidence-95-2-second"
-            },
-            "response": [
-                {
-                    "id": "tve-learning-summer/Q7_2",
-                    "type": "radio",
-                    "prompt": "Were you able to successfully find the lower and upper bond of the 95% confidence interval before you see the demonstration in Step 6 and 7? If no, please use the App below again to construct the 95% confidence interval correctly.\n\nHere's the link to the tutorial slides again:\nhttps://docs.google.com/presentation/d/1PyE9iHXErAeq5Q0PsHBxDDrcxcLkwmxTRa-_zIhx5KQ/edit?usp=sharing",
-                    "options": [
-                        "No",
-                        "Yes"
-                    ]
-                },
-                {
-                    "id": "tve-learning-summer/Q9_2",
-                    "type": "radio",
-                    "prompt": "Do you now understand how to find a 95% confidence interval?",
-                    "options": [
-                        "Definitely not",
-                        "Probably not",
-                        "Might or might not",
-                        "Probably yes",
-                        "Definitely yes"
-                    ]
-                },
-                {
-                    "id": "tve-learning-summer/Q10_2",
-                    "type": "radio",
-                    "prompt": "Based on the confidence interval, do you think the population mean is significantly different from 0?",
-                    "options": [
-                        "Yes",
-                        "No"
-                    ]
-                }
-            ]
-        },
-        "Main_ExploreSecond3": {
-            "type": "react-component",
-            "path": "tve-learning-summer/assets/ConfidenceApp.tsx",
-            "parameters": {
-                "pageId": "guided-99",
-                "taskId": "guided-confidence-99-second"
-            },
-            "response": []
-        },
-        "Main_ExploreSecond4": {
-            "type": "questionnaire",
-            "response": [
-                {
-                    "id": "tve-learning-summer/Q15_2",
-                    "type": "textOnly",
-                    "prompt": "### Now, review steps 2 and 3.\n\n**Step 2:** Mark the lower bound of the **99% confidence interval**.\n\n![Step 2](tve-learning-summer/assets/guided-step-2.png)"
-                },
-                {
-                    "id": "tve-learning-summer/Q16_2",
-                    "type": "textOnly",
-                    "prompt": "**Step 3:** Mark the upper bound of the **99% confidence interval**.\n\n![Step 3](tve-learning-summer/assets/guided-step-3.png)"
-                },
-                {
-                    "id": "tve-learning-summer/Q17_2",
-                    "type": "radio",
-                    "prompt": "Were you able to successfully find the lower and upper bond of the 99% confidence interval before you see the demonstration in Step 2 and 3?",
-                    "options": [
-                        "No",
-                        "Yes"
-                    ]
-                },
-                {
-                    "id": "tve-learning-summer/Q18_2",
-                    "type": "radio",
-                    "prompt": "Is the 99% confidence wider or narrower than the 95% confidence interval?",
-                    "options": [
-                        "Wider",
-                        "Narrower"
-                    ]
-                }
-            ]
-        },
-        "Main_ExploreSecond5": {
-            "type": "video",
-            "instruction": "Next, you will watch an instructional video about how to calculate the confidence interval. Please fullscreen for better viewing. Do not skip any part of the video, move back or rewatch. The option to advance the page will appear after the video ends.",
-            "instructionLocation": "aboveStimulus",
-            "path": "tve-learning-summer/assets/main_embodied (720p).mp4",
-            "forceCompletion": true,
-            "response": []
-        },
         "JOL1": {
             "type": "questionnaire",
             "response": [
@@ -1075,12 +976,6 @@
 
     "Cognitive_load",
 
-    "Main_ExploreFirst",
-    "Main_ExploreFirst2",
-    "Main_ExploreFirst3",
-    "Main_ExploreFirst4",
-    "Main_ExploreFirst5",
-
     "JOL1",
     "Posttest1",
 
@@ -1107,11 +1002,11 @@
           "id": "main-explorer-condition",
           "order": "fixed",
           "components": [
-            "Main_ExploreSecond",
-            "Main_ExploreSecond2",
-            "Main_ExploreSecond3",
-            "Main_ExploreSecond4",
-            "Main_ExploreSecond5"
+            "Main_ExploreFirst",
+            "Main_ExploreFirst2",
+            "Main_ExploreFirst3",
+            "Main_ExploreFirst4",
+            "Main_ExploreFirst5"
           ]
         }
       ]
