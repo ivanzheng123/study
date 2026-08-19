@@ -177,3 +177,10 @@ background: #e8f0ff;
 color: var(--accent);
 font-weight: 600;
 }
+.think-aloud-heading {
+  text-decoration: underline;
+}
+.think-aloud-list {
+  margin-top: 0;
+  margin-bottom: 1em;
+}

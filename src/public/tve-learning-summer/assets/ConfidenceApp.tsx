@@ -1011,33 +1011,108 @@ const extraAnswersRef = useRef<Record<string, string>>({});
   );
 
   const renderGuided95Page = () => (
-    <div className='guided-page'>
-      <section className='guided-section'>
+    <div className="guided-page">
+      <section className="guided-section think-aloud-section">
+        <h2>Think Aloud While You Explore</h2>
+
         <p>
-          Suppose we want to estimate a population parameter, such as the average happiness level in a country. 
-          A common approach is to draw a sample and compute the mean of the sample, which serves as our point estimate of the population mean. 
-          However, because we usually have access to only one sample, this single estimate does not capture the uncertainty inherent in sampling. 
-          To address this, we construct a confidence interval (CI)—a range of plausible values for the population parameter of interest, derived from our observed sample data.
+          Next, you will explore how confidence intervals are constructed using the{" "}
+          <b>Confidence Interval App.</b>
         </p>
-        <p>Next, you will self-explore how to calculate a confidence interval, using the a Confidence Interval App. Make sure you've full screened the browser.</p>
-        <p>Please follow this tutorial to use the app (Copy the link to a separate page of your browser):</p>
-        <p>https://docs.google.com/presentation/d/1PyE9iHXErAeq5Q0PsHBxDDrcxcLkwmxTRa-_zIhx5KQ/edit?usp=sharing</p>
+
+        <p className="think-aloud-heading">
+          <b>Please talk out loud throughout the activity</b>
+        </p>
+
+        <p>
+          As you use the app,{" "}
+          <b>say out loud whatever is going through your mind.</b>{" "}
+          Do not just think silently—we need to be able to hear your thoughts in
+          the recording.
+        </p>
+
+        <p>You might talk about:</p>
+
+        <ul className="think-aloud-list">
+          <li>what you notice;</li>
+          <li>what you are trying to figure out;</li>
+          <li>what you expect to happen;</li>
+          <li>what surprises or confuses you;</li>
+          <li>any ideas or connections that come to mind.</li>
+        </ul>
+
+        <p>
+          There are no right or wrong things to say. We are interested in your
+          natural thought process, not in how well you can explain your reasoning.
+        </p>
+
+        <p>
+          <b>
+            Please keep talking as continuously as you can while you explore.
+          </b>{" "}
+          If you notice that you have become quiet, simply start saying your
+          thoughts out loud again.
+        </p>
       </section>
 
-      <section className='guided-section'>
-        <h2>Part 1: Construct a 95% CI</h2>
+      <section className="guided-section">
         <p>
-          Below, you will try to construct a 95% confidence interval using the Confidence Interval App. 
-          Use SE = 0.18, sample mean 𝑿̅ = 0.8, to consruct a 95% confidence interval. After you finish your construction, review Steps 6 and 7 to see the correct solution. 
-          If your interval is incorrect, revise your work in the confidence interval app based on the explanations provided in those steps.
+          Suppose we want to estimate a population parameter, such as the average
+          happiness level in a country. A common approach is to draw a sample and
+          compute the mean of the sample, which serves as our point estimate of
+          the population mean. However, because we usually have access to only
+          one sample, this single estimate does not capture the uncertainty
+          inherent in sampling. To address this, we construct a confidence
+          interval (CI)—a range of plausible values for the population parameter
+          of interest, derived from our observed sample data.
         </p>
 
-        <p>Your activity in the app will be recorded. To receive extra credit, it is important that you complete all steps and fully engage with the activity.</p>
+        <p>
+          Next, you will self-explore how to calculate a confidence interval,
+          using the Confidence Interval App. Make sure you've full screened the
+          browser.
+        </p>
+
+        <b>
+          Please follow this tutorial to use the app (Copy the link to a separate
+          page of your browser):
+        </b>
+
+        <br />
+
+        <b>
+          <a
+            href="https://docs.google.com/presentation/d/1PyE9iHXErAeq5Q0PsHBxDDrcxcLkwmxTRa-_zIhx5KQ/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://docs.google.com/presentation/d/1PyE9iHXErAeq5Q0PsHBxDDrcxcLkwmxTRa-_zIhx5KQ/edit?usp=sharing
+          </a>
+        </b>
+      </section>
+
+      <section className="guided-section">
+        <h2>Part 1: Construct a 95% CI</h2>
+
+        <p>
+          Below, you will try to construct a 95% confidence interval using the
+          Confidence Interval App. Use SE = 0.18, sample mean 𝑿̅ = 0.8, to
+          construct a 95% confidence interval. After you finish your construction,
+          review Steps 6 and 7 to see the correct solution. If your interval is
+          incorrect, revise your work in the confidence interval app based on the
+          explanations provided in those steps.
+        </p>
+
+        <p>
+          Your activity in the app will be recorded. To receive extra credit, it
+          is important that you complete all steps and fully engage with the
+          activity.
+        </p>
 
         {renderConfidenceApplication()}
 
         {renderConfidenceIntervalInputs(
-          'What is the 95% confidence interval?',
+          "What is the 95% confidence interval?"
         )}
       </section>
     </div>
